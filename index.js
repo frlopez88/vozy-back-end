@@ -17,7 +17,6 @@ app.post('/crearOrden', async (req,res)=>{
         motivo: "164"
     };
 
-    process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0"
 
     const result = await fetch("https://wscbdev.cablecolor.hn/API/crearOrden", {
         method: "POST",
@@ -36,4 +35,4 @@ app.post('/crearOrden', async (req,res)=>{
 
 })
 
-app.listen(8080)
+app.listen(4000)
